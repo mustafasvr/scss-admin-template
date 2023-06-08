@@ -1,0 +1,43 @@
+$width: 1000px;
+
+
+
+
+* {
+    position: relative;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    // COLOR
+    --background: 236,236,236;
+    --content: 254,254,254;
+
+    // PADDING
+    --padding-s: 5px;
+    --padding-m: 10px;
+    --padding-l: 15px;
+    --padding-xl: 20px;
+
+    // BORDER
+    --border-radius-s: 4px;
+    --border-radius-m: 7px;
+    --border-radius-c: 50%;
+
+    // SPACER
+
+    --spacer-s: 10px;
+    --spacer-m: 20px;
+}
+
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}

@@ -1,0 +1,28 @@
+aside {
+    display: flex;
+    flex-shrink: 0;
+    width: 250px;
+    background-color: rgb(var(--content));
+
+    .aside-container {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacer-s);
+        padding: var(--padding-m);
+
+        .aside-header {
+            display: flex;
+            align-items: center;
+            height: 60px;
+            width: 100%;
+        }
+
+        .aside-body {
+            display: flex;
+            flex-direction: column; 
+        }
+
+    }
+
+
+}

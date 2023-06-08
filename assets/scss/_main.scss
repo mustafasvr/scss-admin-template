@@ -1,0 +1,44 @@
+main {
+    min-height: 100vh;
+    vertical-align: top;
+    padding: calc(var(--padding-l) * 2) 0;
+    flex-grow: 1;
+    min-width: 0;
+    background-color: rgb(var(--background));
+    .main-container {
+        margin: auto;
+        width: 100%;
+        max-width: $width;
+        padding: 0 var(--padding-m);
+        .main-body {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacer-m);
+
+            .main-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: var(--spacer-s);
+                }
+            }
+
+            .m-card {
+                background-color: rgb(var(--content));
+                border-radius: var(--border-radius-m);
+                width: 100%;
+                &.m-card-p {
+                    padding: var(--padding-m);
+                }
+            }
+
+        }
+
+
+    }
+
+}
