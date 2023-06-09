@@ -1,5 +1,7 @@
 $width: 1000px;
 
+$header-height: 32px;
+$aside-width: 250px;
 
 
 
@@ -10,12 +12,15 @@ $width: 1000px;
     margin: 0;
     text-decoration: none;
     list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
+    
     // COLOR
     --background: 236,236,236;
     --content: 254,254,254;
+    --border-color: 204,204,204;
 
     // PADDING
     --padding-s: 5px;
@@ -29,7 +34,6 @@ $width: 1000px;
     --border-radius-c: 50%;
 
     // SPACER
-
     --spacer-s: 10px;
     --spacer-m: 20px;
 }
@@ -39,5 +43,11 @@ body {
     height: 100%;
     width: 100%;
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    .wrapper {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
 }
